@@ -1,0 +1,32 @@
+{
+  "name": "bircd",
+  "preferGlobal": false,
+  "version": "0.0.1",
+  "author": "Softweyr <support@softweyr.co.uk>",
+  "description": "Ben's IRC Daemon Implementation in Javascript",
+  "contributors": [ 
+    {
+      "name": "Ben Ellis",
+      "email": "ben.ellis@softweyr.co.uk"
+    } 
+  ],
+  "bin": {
+    "http-server": "./app"
+  },
+  "main": "./app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BEllis/bircd.js.git"
+  },
+  "keywords": [
+    "cli",
+    "irc",
+    "ircd",
+    "server"
+  ],
+  "analyze": false,
+  "license": "APACHEV2",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
