@@ -1,4 +1,5 @@
 var net = require('net');
+var commands = require('./commands.js');
 
     var BIRCDServer = function(options, connectionListener) {
         var connectionListenerWrapper = function(c) {
@@ -35,7 +36,6 @@ var net = require('net');
             console.log('Address in use, retrying...');
             setTimeout(function () {
               server.close();
-              // Do PORT and HOST need setting or are they some clever global variables?
               server.listen(this.port, this.address);
             }, 1000);
           }
